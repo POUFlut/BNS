@@ -12,6 +12,8 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
     ExitApp
 }
 
+testdownlad
+
 ;Fetch版本，確認是否有新版
 vr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
 vr.Open("GET", "https://pouflut.github.io/BNS/version", true)
